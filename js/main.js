@@ -32,7 +32,7 @@
 //   x[slideIndex-1].style.display = "block";  
 // }
 
-let slideIndex = 1;
+const slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -45,8 +45,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let slides = document.querySelector("mySlides");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

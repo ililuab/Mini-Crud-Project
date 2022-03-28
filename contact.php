@@ -34,26 +34,26 @@
         <div class="container-map-only">
             <div class="maps-form-contact">
                 <div class="container">
-                    <form action="action_page.php">
+                    <form method="post" target="_self" >
 
-                        <label for="fname">Voornaam</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Je naam...">
+                        <label for="fname">Voornaam</label><br>
+                        <input type="text" id="fname" name="name" required placeholder="Je naam..."><br>
 
-                        <label for="lname">Achternaam</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Achternaam...">
+                        <label for="lname">Achternaam</label><br>
+                        <input type="text" id="lname" name="lastname" required placeholder="Achternaam..."><br>
 
-                        <label for="country">Land</label>
-                        <select id="country" name="country">
+                        <label for="country">Land</label><br>
+                        <select id="country" required name="country"><br>
                             <option value="Nederland">Nederland</option>
                             <option value="Belgie">Belgie</option>
-                            <option value="Polen">Polen</option>
-                        </select>
+                            <option value="Duitsland">Duitsland</option>
+                        </select><br>
 
-                        <label for="subject">Ifno</label>
-                        <textarea id="subject" name="subject" placeholder="Typ iets..." style="height:200px"
-                            width="100px"></textarea>
+                        <label for="subject">Info</label><br>
+                        <textarea id="subject" name="subject" placeholder="hier typen..." style="height:200px"
+                            width="100px"></textarea><br>
 
-                        <input type="submit" value="Verstuur">
+                        <input type="submit" value="Verstuur"><br>
 
                     </form>
                 </div>

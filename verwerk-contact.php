@@ -2,7 +2,7 @@
 $result = "";
 
 $host = "localhost";
-$name = "orders";
+$name = "contact";
 $char = "utf8";
 $user = "ilias";
 $pass = "iliasphp123";
@@ -16,7 +16,7 @@ try {
 
 if ($result=="") {
   try {
-    $stmt = $pdo->prepare("INSERT INTO `orders` (`name`, `email`, `quantity`) VALUES (?,?,?)");
-    $stmt->execute([$_POST["name"], $_POST["email"], $_POST["quantity"]]);
+    $stmt = $pdo->prepare("INSERT INTO `contact` (`name`, `lastname`, `country`) VALUES (?,?,?)");
+    $stmt->execute([$_POST["name"], $_POST["lastname"], $_POST["country"]]);
   } catch (Exception $ex) { $result = $ex->getMessage(); }
 }

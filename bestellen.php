@@ -43,10 +43,10 @@
 
     
     <form method="post" target="_self" >
-      <input type="text" name="name" placeholder="Voer hier je naam in.." required>
-      <input type="email" name="email" placeholder="Voer hier je email in.."required>
-      <input type="number" name="quantity" placeholder="Aantal"required/>
-      <input type="submit" value="Ga door ">
+      <input class="input-naam-contact" type="text" name="name" placeholder="Voer hier je naam in.." required>
+      <input class="input-email-contact" type="email" name="email" placeholder="Voer hier je email in.."required>
+      <input class="input-number-contact" type="number" name="quantity" placeholder="Aantal"required/>
+      <input class="input-submit-contact" type="submit" value="Verstuur">
     </form>
 
   <script src="js/main.js"></script>

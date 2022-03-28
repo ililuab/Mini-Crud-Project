@@ -55,14 +55,20 @@
     </body>
     <footer>
         <div class="footer-container">
-            <div class="left-content">
-                
-            </div>
-            <div class="mid-content">
+            <div class="left-content-container">
+                <p class="left-content">ilias is aan het testen</p>
+                <p class="left-content">jaaa</p>
 
             </div>
-            <div class="right-content">
-
+            <div class="mid-content-container">
+                <p class="mid-content">Lorem ipsum dolor sit amet. Et reiciendis ullam in voluptas possimus non
+                    necessitatibus facere. Non voluptatem debitis est consequatur nisi quo provident voluptas cum minus
+                    galisum est earum omnis eum fugit iusto.</p>
+            </div>
+            <div class="right-content-container">
+                <p class="right-content">Lorem ipsum dolor sit amet. Et reiciendis ullam in voluptas possimus non
+                    necessitatibus facere. Non voluptatem debitis est consequatur nisi quo provident voluptas cum minus
+                    galisum est earum omnis eum fugit iusto.</p>
             </div>
 
         </div>
