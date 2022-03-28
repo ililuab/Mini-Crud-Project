@@ -16,7 +16,8 @@ try {
 
 if ($result=="") {
   try {
-    $stmt = $pdo->prepare("INSERT INTO `contact` (`name`, `lastname`, `country`) VALUES (?,?,?)");
-    $stmt->execute([$_POST["name"], $_POST["lastname"], $_POST["country"]]);
+    $stmt = $pdo->prepare("INSERT INTO `contact` (`cont_name`, `cont_lname`, `cont_country`, `cont_info` ) VALUES (?,?,?)");
+    $stmt->execute([$_POST["cont_name"], $_POST["cont_lname"], $_POST["cont_country"], [$_POST["cont_info"]]]);
   } catch (Exception $ex) { $result = $ex->getMessage(); }
 }
+?>

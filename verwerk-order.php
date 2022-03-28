@@ -20,3 +20,4 @@ if ($result=="") {
     $stmt->execute([$_POST["name"], $_POST["email"], $_POST["quantity"]]);
   } catch (Exception $ex) { $result = $ex->getMessage(); }
 }
+?>

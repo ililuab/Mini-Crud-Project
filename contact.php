@@ -30,17 +30,27 @@
 </header>
 
 <body>
+    <?php
+    if (isset($_POST["name"])) {
+      require "verwerk-contact.php";
+      echo $result == ""
+        ? "<div class='notify'>Je zal zo spoedig mogelijk een reactie krijgen!</div>"
+        : "<div class='notify'>$result</div>" ;
+    }
+    ?>
+
     <div class="container-maps-contact">
         <div class="container-map-only">
             <div class="maps-form-contact">
                 <div class="container">
-                    <form method="post" target="_self" >
+                    <form method="post" target="_self">
 
                         <label for="fname">Voornaam</label><br>
-                        <input type="text" id="fname" name="name" required placeholder="Je naam..."><br>
+                        <input type="text" id="fname" name="name" required placeholder="Vul hier je naam in..."><br>
 
                         <label for="lname">Achternaam</label><br>
-                        <input type="text" id="lname" name="lastname" required placeholder="Achternaam..."><br>
+                        <input type="text" id="lname" name="lastname" required
+                            placeholder="Vul hier je achternaam in..."><br>
 
                         <label for="country">Land</label><br>
                         <select id="country" required name="country"><br>
@@ -49,9 +59,9 @@
                             <option value="Duitsland">Duitsland</option>
                         </select><br>
 
-                        <label for="subject">Info</label><br>
-                        <textarea id="subject" name="subject" placeholder="hier typen..." style="height:200px"
-                            width="100px"></textarea><br>
+                        <label for="subject">Vragen</label><br>
+                        <textarea class="textarea-contact" id="subject" name="subject" placeholder="hier typen..."
+                            style=" max-width: 720px; max-height: 360px;"></textarea><br>
 
                         <input type="submit" value="Verstuur"><br>
 
