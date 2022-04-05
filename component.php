@@ -18,12 +18,10 @@ function component($product_name, $product_price, $product_image, $id){
                                 <i class=\"fas fa-star\"></i>
                                 <i class=\"far fa-star\"></i>
                             </h6>
-                            <p class=\"card-text\">
-                                Some quick example text to build on the card.
-                            </p>
+                           
                             <h5>
-                                <small><s class=\"text-secondary\">$519</s></small>
-                                <span class=\"price\">$$product_price</span>
+                                <small><s class=\"text-secondary\">€110,99</s></small>
+                                <span class=\"price\">€$product_price</span>
                             </h5>
 
                             <button type=\"submit\" class=\"btn btn-warning my-3\" name=\"add\">Toevoegen aan winkelwagen <i class=\"fas fa-shopping-cart\"></i></button>

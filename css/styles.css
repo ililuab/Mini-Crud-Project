@@ -168,9 +168,9 @@ h5 {
   text-align: center;
   margin-top: 10px;
   font-family: "Courier New", monospace;
-  font-size: 40px;
   color: white;
   text-decoration: none;
+  color: black;
 }
 
 .border-index {
@@ -517,6 +517,10 @@ img{
 
 .price-details h6{
   padding: 3% 2%;
+}
+
+#header {
+  background-color: #964b00;
 }
 
 /* Einde - Shoppingcart */

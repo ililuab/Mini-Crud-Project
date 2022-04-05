@@ -1,7 +1,8 @@
 
+<link rel="stylesheet" href="css/styles.css" />
 <header id="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="bestellen.php" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
             <h3 class="px-5">
                 <i class="fas fa-shopping-basket"></i> ILI BISTRO
             </h3>
@@ -39,6 +40,8 @@
         </div>
     </nav>
 </header>
+
+
 
 
 

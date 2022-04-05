@@ -24,6 +24,7 @@ if (isset($_POST['remove'])){
 
 <!doctype html>
 <html lang="en">
+<link rel="stylesheet" href="css/styles.css" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -49,6 +50,7 @@ if (isset($_POST['remove'])){
     <div class="row px-5">
         <div class="col-md-7">
             <div class="shopping-cart">
+                <hr>
                 <h6>Mijn winkelwagen</h6>
                 <hr>
 
