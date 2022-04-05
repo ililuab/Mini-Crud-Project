@@ -22,6 +22,7 @@
                     <li class="list-color"><a href="gallery.php">Gallery</a></li>
                     <li class="list-color"><a href="bestellen.php">Bestellen</a></li>
                     <li class="list-color"><a href="contact.php">Contact</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
         </div>

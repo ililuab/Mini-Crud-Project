@@ -17,12 +17,13 @@
                 </div>
                 <div class="header-list-container">
                     <ul class="header-list">
-                        <li class="list-color"><a href="index.php">Home</a></li>
-                        <li class="list-color"><a href="menu.php">Menu</a></li>
-                        <li class="list-color"><a href="reserveren.php">Reserveren</a></li>
-                        <li class="list-color"><a href="gallery.php">Gallery</a></li>
-                        <li class="list-color"><a href="bestellen.php">Bestellen</a></li>
-                        <li class="list-color"><a href="contact.php">Contact</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="menu.php">Menu</a></li>
+                        <li><a href="reserveren.php">Reserveren</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="bestellen.php">Bestellen</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="login.php">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +58,6 @@
         <div class="footer-container">
             <div class="left-content-container">
                 <p class="left-content">ilias is aan het testen</p>
-                <p class="left-content">jaaa</p>
 
             </div>
             <div class="mid-content-container">

@@ -29,22 +29,7 @@ class Reservation {
       $this->stmt->execute([$date, $slot, $name, $email, $tel, $notes]);
     } catch (Exception $ex) {
       $this->error = $ex->getMessage();
-      return false;
     }
-
-    $subject = "Reservatie ontvangen!";
-    $message = "Bedankt!, we hebben je verzoek ontvangen.";
-    @mail($email, $subject, $message);
-    return true;
-  }
-
-  function getDay ($day="") {
-    if ($day=="") { $day = date("Y-m-d"); }
-    $this->stmt = $this->pdo->prepare(
-      "SELECT * FROM reservations WHERE res_date=?"
-    );
-    $this->stmt->execute([$day]);
-    return $this->stmt->fetchAll(PDO::FETCH_NAMED);
   }
 }
 
