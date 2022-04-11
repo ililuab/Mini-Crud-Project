@@ -46,7 +46,7 @@ function cartElement($product_image, $product_name, $product_price, $id){
                             <div class=\"col-md-6\">
                                 <h5 class=\"pt-2\">$product_name</h5>
                                 <small class=\"text-secondary\">Verzender: ILI BISTRO</small>
-                                <h5 class=\"pt-2\">$$product_price</h5>
+                                <h5 class=\"pt-2\">€$product_price</h5>
                                 <button type=\"submit\" class=\"btn btn-warning\">Bewaar voor later</button>
                                 <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Verwijder</button>
                             </div>

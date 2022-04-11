@@ -30,9 +30,13 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             header('Location: home.php');
         } else {
             echo 'Incorrect gebruikersnaam en/of wachtwoord!!';
+            header("Location: login.php");
+            exit();
         }
     } else {
         echo 'Incorrect gebruikersnaam en/of wachtwoord!!';
+        header("Location: login.php");
+        exit(); 
     }
 	$stmt->close();
 }
