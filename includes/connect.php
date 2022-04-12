@@ -1,15 +1,25 @@
 <?php
 
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'ilias';
-$DATABASE_PASS = 'iliasphp123';
-$DATABASE_NAME = 'phplogin';
+$host = "localhost";
+$db = "producttb";
+$user = "ilias";
+$pass = "iliasphp123"
+$charset = "utf8";
 
-$conn = new PDO("mysql:dbhost=$DATABASE_HOST;dbname=$DATABASE_NAME", $DATABASE_USER, '');
+$dsn = "mysql:host=$host; dbname=$db; charset=$charset";
+$opt = [
+	PDO:: ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+	PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+	PDO::ATTR_EMULATE_PREPARES => false,
+];
 
 try {
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   echo "PDO works";
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+ $connect = new PDO ($dsn, $user, $pass, $opt);
+ echo "Verbinding is gemaakt.";
+} 
+catch (PDOExeption $e)
+{
+	echo $e ->getMessage();
+	die ("OEI!, Er is een database probleem")
 }
+?>

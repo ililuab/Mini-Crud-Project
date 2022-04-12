@@ -19,6 +19,7 @@ if (!isset($_SESSION['loggedin'])) {
 			<div>
 				<h1>ILI BISTRO</h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profiel</a>
+				<a href="CRUD.php"><i class="fas fa-user-circle"></i>C.R.U.D</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
 			</div>
 		</nav>

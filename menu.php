@@ -54,7 +54,6 @@
               <span class="menu-item-prijs">€12.90</span>
             </h4>
             <p class="menu-item-beschrijving">
-              
             </p>
           </div>
         </div>
