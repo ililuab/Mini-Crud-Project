@@ -32,12 +32,49 @@
       </div>
     </div>
   </header>
-  <body>
+<body>
+  <div class="container-menu">
+    <div class="menu">
+      <div class="menu-groep">
+        <div class="menu-item">
+          <img class="menu-item-plaatje" src="Shopping/upload/product1.png" alt="">
+          <div class="menu-item-tekst">
+            <h4 class="menu-item-head">
+              <span class="menu-item-naam">rgergerg</span>
+              <span class="menu-item-prijs">€12.90</span>
+            </h4>
+            <p class="menu-item-beschrijving">   </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-plaatje" src="Shopping/upload/product2.png" alt="">
+          <div class="menu-item-tekst">
+            <h4 class="menu-item-head">
+              <span class="menu-item-naam">rgergerg</span>
+              <span class="menu-item-prijs">€12.90</span>
+            </h4>
+            <p class="menu-item-beschrijving">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-groep">
+        <div class="menu-item">
+          <img class="menu-item-plaatje" src="Shopping/upload/product3.png" alt="">
+          <div class="menu-item-tekst">
+            <h4 class="menu-item-head">
+              <span class="menu-item-naam">rgergerg</span>
+              <span class="menu-item-prijs">€12.90</span>
+            </h4>
+            <p class="menu-item-bescrhijving">
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 
-
-
-
-
-  <script src="js/main.js"></script>
-  </body>
 </html>

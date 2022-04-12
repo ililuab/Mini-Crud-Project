@@ -608,3 +608,104 @@ img{
 }
 
 /* Einde - Shoppingcart */
+
+/* Begin - Reserveren */
+
+.container-reserveren {
+  margin-top: 30px;
+  margin-left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.reserveren-main-tekst {
+  font-size: 50px;
+}
+
+#resForm {
+  max-width: 400px;
+  border: 1px solid #aaa;
+}
+#resForm label, #resForm input, #resForm select {
+  display: block;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px 0;
+}
+#resForm input[type="submit"] {
+  background: #964b00;
+  border: 0;
+  padding: 15px 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+/* Einde - Reserveren */
+
+/* Begin - Menu */
+
+.container-menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+
+.menu-group-head {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu-groep {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item-plaatje {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 2em;
+}
+
+.menu-item-tekst {
+  flex-grow: 1;
+}
+
+.menu-item-head {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-naam {
+  margin-right: 1.5em;
+}
+
+.menu-item-beschrijving {
+  line-height: 1.6;
+}
+
+  .menu-item-plaatje {
+    width: 125px;
+    height: 125px;
+  }
+
+
+/* Einde - Menu */

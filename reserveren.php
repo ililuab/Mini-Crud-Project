@@ -37,15 +37,16 @@ if (isset($_POST["date"])) {
   if ($_RSV->save(
     $_POST["date"], $_POST["slot"], $_POST["name"],
     $_POST["email"], $_POST["tel"], $_POST["notes"])) {
-  } else { echo "<div class='err'>".$_RSV->error."</div>"; }
+  } else { echo $_RSV->error."</div>"; }
 }
 ?>
     <div class="container-reserveren">
         <div class="reserveren">
             <p class="reserveren-main-tekst">Reserveren</p>
+            <br>
             <form id="resForm" method="post" target="_self">
                 <label for="res_name">Naam</label>
-                <input class="input-reserveren" type="text" required name="name" placeholder="bijv..(ilias)" />
+                <input class="input-reserveren" type="text" required name="name" placeholder="bijv..(henk)" />
 
                 <label for="res_email">Email</label>
                 <input class="input-reserveren" type="email" required name="email" placeholder="xxxxx@gmail.com" />
@@ -55,7 +56,6 @@ if (isset($_POST["date"])) {
 
                 <label for="res_notes">Vragen (OPTIONEEL)</label>
                 <input class="input-reserveren" type="text" name="notes" placeholder="vragen?.." />
-
                 <?php
 
   $mindate = date("Y-m-d");
