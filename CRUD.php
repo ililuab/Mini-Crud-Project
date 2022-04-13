@@ -1,33 +1,13 @@
 <?php
 require_once ("includes/connect.php")
 
-
-$sql = "INSERT INTO producttb (product_name, product_price, product_image)"
-		VALUES (:product_name, :product_price, product_image);
-
-$stmt = $connect->prepare($sql);
-$stmt ->bindparam(":product_name", $_POST['product_name']);
-$stmt ->bindparam(":product_price", $_POST['product_price']);
-$stmt ->bindparam(":product_image", $_POST['product_image']);
-$stmt ->execute();
-
-
-
-
-
-
-session_start();
-
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
-	exit;
-}
 ?>
 
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,18 +15,78 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="css/styles.css" />
     <title>ILI BISTRO - CRUD</title>
 </head>
-<body>
+
 <body class="loggedin">
-		<nav class="navtop">
-			<div>
-				<h1>ILI BISTRO</h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profiel</a>
-				<a href="CRUD.php"><i class="fas fa-user-circle"></i>C.R.U.D</a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
-			</div>
-		</nav>
-		<div class="content">
-			<h2>CRUD Pagina</h2>
-		</div>
+    <nav class="navtop">
+        <div>
+            <h1>ILI BISTRO</h1>
+            <a href="profile.php"><i class="fas fa-user-circle"></i>Profiel</a>
+            <a href="CRUD.php"><i class="fas fa-user-circle"></i>C.R.U.D</a>
+            <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Uitloggen</a>
+        </div>
+    </nav>
+    <div class="content">
+        <h2>CRUD Pagina</h2>
+
+    </div>
+
+    
+<?php
+         $records = 'SELECT id, product_name, product_price, product_image from producttb';
+         $stmt = $connect->prepare($records);
+         $stmt ->execute();
+?>
+<div class="crud-table-container">
+<table  class="table table-striped table-condensed" id="tblData">
+    <thead>
+        <tr>
+            <th>Product ID <hr></th>
+            <th>Product Naamm <hr></th>
+            <th>Product Prijs <hr></th>
+            <th>Product Image <hr></th>
+       </tr>
+    </thead>
+
+    <tbody>
+       <?php 
+foreach( $stmt as $data )
+            {
+                echo "<tr><td>".$data['id']."</td>
+                          <td>".$data['product_name']."</td>
+                          <td>".$data['product_price']."</td>
+                          <td>".$data['product_image']."</td>
+                       </tr>";
+            }
+       ?>
+    </tbody>        
+</table>
+        </div>
+
+
+    <div class="crudform">
+        <form action="create.php" method="post">
+            <input class="crudforminput" type="text" placeholder="Product naam..." name="product_name" required>
+            <input class="crudforminput" type="text" placeholder="Product prijs..." name="product_price" required>
+            <input class="crudforminput" type="text" placeholder="Product plaatje..." name="product_image" required>
+            <input class="createbutton" placeholder="create" value="toevoegen" type="submit"
+                name="createbutton"></input>
+        </form>
+
+        <form action="update.php" method="post">
+            <input class="crudforminput" type="text" placeholder="Product ID..." name="id" required>
+            <input class="crudforminput" type="text" placeholder="Product naam..." name="product_name" required>
+            <input class="crudforminput" type="text" placeholder="Product prijs..." name="product_price" required>
+            <input class="crudforminput" type="text" placeholder="Product plaatje..." name="product_image" required>
+            <input class="updatebutton" placeholder="update" value="bewerken" type="submit" name="updatebutton"></input>
+        </form>
+
+        <form action="delete.php" method="post">
+            <input class="crudforminput" type="text" placeholder="Product ID" name="id" required>
+            <input class="deletebutton" placeholder="delete" value="Verwijderen" type="submit"
+                name="deletebutton"></input>
+        </form>
+    </div>
+
 </body>
+
 </html>

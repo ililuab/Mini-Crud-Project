@@ -1,10 +1,10 @@
 <?php
 
-$host = "localhost";
-$db = "producttb";
-$user = "ilias";
-$pass = "iliasphp123"
-$charset = "utf8";
+$host ='localhost';
+$db = 'productdb';
+$user = 'ilias';
+$pass = 'iliasphp123';
+$charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host; dbname=$db; charset=$charset";
 $opt = [
@@ -14,12 +14,11 @@ $opt = [
 ];
 
 try {
- $connect = new PDO ($dsn, $user, $pass, $opt);
- echo "Verbinding is gemaakt.";
+ 	$connect = new PDO ($dsn, $user, $pass,);
 } 
-catch (PDOExeption $e)
-{
+catch (PDOExeption $e) {
 	echo $e ->getMessage();
-	die ("OEI!, Er is een database probleem")
+	die ('OEI!, Er is een database probleem');
 }
+
 ?>
