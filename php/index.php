@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/styles.css"/>
+        <link rel="stylesheet" href="../css/styles.css" />
         <title>ILI BISTRO - Home</title>
     </head>
     <header>
@@ -54,59 +54,42 @@
         </main>
         <script src="js/main.js"></script>
     </body>
-    <footer class="site-footer">
-        <div class="container-footer">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>About</h6>
-                    <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the
-                        upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or
-                        snippets as the code wants to be simple. We will help programmers build up concepts in different
-                        programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android,
-                        SQL and Algorithm.</p>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                        <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                        <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                        <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                        <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                        <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                        <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                        <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                        <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                        <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-                    </ul>
-                </div>
+    <footer class="container-footer">
+        <div class="footer-links">
+            <h2>ILI BISTRO</h2>
+            <div class="footer-links">
+                <a href="index.php">Home</a> <br>
+                <a href="menu.php">Menu Kaart</a> <br>
+                <a href="reserveren.php">Reserveren</a> <br>
+                <a href="contact.php">Contact</a> <br>
+                <a href="bestellen.php">Gerechten Bestellen</a><br>
             </div>
-            <hr>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                        <a href="#">Scanfcode</a>.
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
+        <div class="footer-mid">
+            <div>
+                <i class="footer-maps"></i>
+                <p>ROC Technovium Nijmegen</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.0686505563817!2d5.865080915648393!3d51.823176379688256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c708fb3a371503%3A0x71b9931f22801e9f!2sHeyendaalseweg%2C%20Nijmegen%2C%20Nederland!5e0!3m2!1snl!2sde!4v1650048286937!5m2!1snl!2sde"
+                    width="400" height="100" style="border:0;" allowfullscreen="true" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-rechts">
+            <div class="footer-icons">
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="https://twitter.com/twitter" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.reddit.com/" class="fa fa-reddit"></a>
+                <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+                <a href="https://www.twitch.tv/" class="fa fa-twitch"></a>
+                <a href="https://www.google.nl/" class="fa fa-google"></a>
+                <a href="https://nl.pinterest.com/" class="fa fa-pinterest"></a>
+                <a href="#">
+                    <p>^^^^</p>
+                </a>
             </div>
         </div>
     </footer>

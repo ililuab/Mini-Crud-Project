@@ -14,6 +14,4 @@ $stmt ->bindparam(":product_image", $_POST['product_image']);
 $stmt ->execute();
 
 header("Location: CRUD.php");
-
-
 ?>

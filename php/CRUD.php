@@ -1,8 +1,6 @@
 <?php
 require_once ("../includes/connect.php")
-
 ?>
-
 
 
 <!DOCTYPE html>
@@ -27,10 +25,7 @@ require_once ("../includes/connect.php")
     </nav>
     <div class="content">
         <h2>Create_Read_Update_Delete - Admin panel </h2>
-
     </div>
-
-    
 <?php
          $records = 'SELECT id, product_name, product_price, product_image from producttb';
          $stmt = $connect->prepare($records);
@@ -61,8 +56,6 @@ foreach( $stmt as $data )
     </tbody>        
 </table>
         </div>
-
-
     <div class="crudform">
         <form action="create.php" method="post">
             <input class="crudforminput" type="text" placeholder="Product naam..." name="product_name" required>
@@ -86,7 +79,5 @@ foreach( $stmt as $data )
                 name="deletebutton"></input>
         </form>
     </div>
-
 </body>
-
 </html>

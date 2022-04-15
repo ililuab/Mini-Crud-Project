@@ -33,7 +33,6 @@ function component($product_name, $product_price, $product_image, $id){
     ";
     echo $element;
 }
-
 function cartElement($product_image, $product_name, $product_price, $id){
     $element = "
     

@@ -10,6 +10,4 @@ $stmt ->bindparam(":id", $_POST['id']);
 $stmt ->execute();
 
 header("Location: CRUD.php");
-
-
 ?>
