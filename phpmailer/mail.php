@@ -1,9 +1,9 @@
 
 : <?php
 
-require 'includes/Exception.php';
-require 'includes/PHPMailer.php';
-require 'includes/SMTP.php';
+require 'phpmailer/Exception.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -19,8 +19,8 @@ class Mail {
         $this->mail->isSMTP();
         $this->mail->Host = 'smtp.gmail.com';
         $this->mail->SMTPAuth = true;
-        $this->mail->Username = '';
-        $this->mail->Password = '';
+        $this->mail->Username = '1194420@student.roc-nijmegen.nl';
+        $this->mail->Password = '6ac7NT@e';
         $this->mail->SMTPSecure = 'tls';
         $this->mail->Port = 587;
 

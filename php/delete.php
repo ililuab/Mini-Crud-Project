@@ -1,6 +1,6 @@
 <?php
 
-include_once("includes/connect.php");
+include_once("../includes/connect.php");
 
 $sql = "DELETE FROM producttb
         WHERE id = :id";

@@ -12,7 +12,7 @@ if (!isset($_SESSION['loggedin'])) {
 	<head>
 		<meta charset="utf-8">
 		<title>Home Page</title>
-		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="../css/styles.css"/>
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
@@ -24,8 +24,8 @@ if (!isset($_SESSION['loggedin'])) {
 			</div>
 		</nav>
 		<div class="content">
-			<h2>Home Pagina</h2>
-			<p>Welkom terug, <?=$_SESSION['name']?>!</p>
+			<h2>Home Pagina - Admin panel</h2>
+			<p>Welkom terug, Admin!</p>
 		</div>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-require_once ("includes/connect.php")
+require_once ("../includes/connect.php")
 
 ?>
 
@@ -12,7 +12,7 @@ require_once ("includes/connect.php")
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>ILI BISTRO - CRUD</title>
 </head>
 
@@ -26,7 +26,7 @@ require_once ("includes/connect.php")
         </div>
     </nav>
     <div class="content">
-        <h2>CRUD Pagina</h2>
+        <h2>Create_Read_Update_Delete - Admin panel </h2>
 
     </div>
 
@@ -41,9 +41,9 @@ require_once ("includes/connect.php")
     <thead>
         <tr>
             <th>Product ID <hr></th>
-            <th>Product Naamm <hr></th>
+            <th>Product Naam <hr></th>
             <th>Product Prijs <hr></th>
-            <th>Product Image <hr></th>
+            <th>Product Plaatje <hr></th>
        </tr>
     </thead>
 
@@ -81,7 +81,7 @@ foreach( $stmt as $data )
         </form>
 
         <form action="delete.php" method="post">
-            <input class="crudforminput" type="text" placeholder="Product ID" name="id" required>
+            <input class="crudforminput" type="text" placeholder="Product ID..." name="id" required>
             <input class="deletebutton" placeholder="delete" value="Verwijderen" type="submit"
                 name="deletebutton"></input>
         </form>

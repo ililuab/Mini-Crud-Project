@@ -24,7 +24,7 @@ if (isset($_POST['remove'])){
 
 <!doctype html>
 <html lang="en">
-<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="../css/styles.css" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

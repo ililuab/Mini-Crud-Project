@@ -25,7 +25,7 @@ $stmt->close();
 	<head>
 		<meta charset="utf-8">
 		<title>Profiel Pagina</title>
-		<link rel="stylesheet" href="css/styles.css"/>
+		<link rel="stylesheet" href="../css/styles.css"/>
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
@@ -38,7 +38,7 @@ $stmt->close();
 			</div>
 		</nav>
 		<div class="content">
-			<h2>Profile Pagina</h2>
+			<h2>Profielpagina - Admin panel</h2>
 			<div>
 				<p>Je account informatie staan hieronder:</p>
 				<table>

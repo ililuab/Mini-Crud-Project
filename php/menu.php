@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>ILI BISTRO - Menu</title>
   </head>
   <header>
@@ -12,7 +12,7 @@
       <div id="header-balk" class="header-balk">
         <div class="logo">
           <img
-            src="fotosenvideos/Screenshot 2022-03-11 111514.png"
+            src="../fotosenvideos/Screenshot 2022-03-11 111514.png"
             alt="Logo Restaurant"
             width="100"
             height="100"
@@ -37,7 +37,7 @@
     <div class="menu">
       <div class="menu-groep">
         <div class="menu-item">
-          <img class="menu-item-plaatje" src="Shopping/upload/product1.png" alt="">
+          <img class="menu-item-plaatje" src="../Shopping/upload/product1.png" alt="">
           <div class="menu-item-tekst">
             <h4 class="menu-item-head">
               <span class="menu-item-naam">rgergerg</span>
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="menu-item">
-          <img class="menu-item-plaatje" src="Shopping/upload/product2.png" alt="">
+          <img class="menu-item-plaatje" src="../Shopping/upload/product2.png" alt="">
           <div class="menu-item-tekst">
             <h4 class="menu-item-head">
               <span class="menu-item-naam">rgergerg</span>
@@ -60,7 +60,7 @@
       </div>
       <div class="menu-groep">
         <div class="menu-item">
-          <img class="menu-item-plaatje" src="Shopping/upload/product3.png" alt="">
+          <img class="menu-item-plaatje" src="../Shopping/upload/product3.png" alt="">
           <div class="menu-item-tekst">
             <h4 class="menu-item-head">
               <span class="menu-item-naam">rgergerg</span>
