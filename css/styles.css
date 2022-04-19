@@ -192,6 +192,8 @@ li:hover {
   flex-wrap: wrap;
 }
 
+
+
 .blok-index1 {
   background-color: transparent;
   margin-top: 100px;
@@ -221,7 +223,11 @@ h1 {
   animation-duration: 3s;
 }
 
-h5 {
+.px-5 {
+  font-weight: 600;
+}
+
+h3 {
   text-align: center;
   margin-top: 10px;
   font-family: "Courier New", monospace;
@@ -392,22 +398,29 @@ h3:hover {
 /* Begin - Reserveren form style */
 
 .reserveren {
-  margin-top: 100px;
-  display: flex;
+  display: block;
+  justify-content: space-around;
   justify-content: center;
+}
+
+#resForm {
+  border-radius: 10px;
 }
 
 .reserveren-main-tekst {
   font-weight: bolder;
+  font-family: "Courier New", monospace;
 }
 
-.input-reserveren {
-  width: 50%;
+.label-reserveren {
+  font-weight: 600;
 }
 
 .container-reserveren {
   height: auto;
-  background-color: white;
+  background-color: #964b00;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 label {
@@ -423,6 +436,7 @@ label {
   background-color: #ffffff;
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
   margin: 100px auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .login h1 {
   text-align: center;
@@ -615,66 +629,88 @@ img{
 
 /* Begin - Menu */
 
-.container-menu {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5em;
-}
-
-.menu {
-  font-family: "Inter", sans-serif;
-  font-size: 30px;
-}
-
-.menu-group-head {
-  margin: 0;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #ccc;
-}
-
-.menu-groep {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-  padding: 1.5em 0;
-}
-
-.menu-item {
-  display: flex;
-}
-
-.menu-item-plaatje {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  margin-right: 2em;
-}
-
-.menu-item-tekst {
-  flex-grow: 1;
-}
-
-.menu-item-head {
-  display: flex;
+.main {
+  width: 1170px;
+  margin: 100px auto;
   color: white;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #00875c;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menus {
+  display: flex;
   justify-content: space-between;
-  margin: 0;
+  flex-wrap: wrap;
 }
-
-.menu-item-naam {
-  margin-right: 1.5em;
+.menu-column {
+  width: 31%;
 }
-
-.menu-item-beschrijving {
-  line-height: 1.6;
+.menu-column h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
 }
-
-  .menu-item-plaatje {
-    width: 125px;
-    height: 125px;
-  }
+.menu-column h4:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #00875c;
+  bottom: 0;
+}
+.single-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.single-menu img {
+  border-radius: 50%;
+  max-width: 110px;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  margin-right: 15px;
+  transition: .3s;
+}
+.single-menu:hover img{
+    transform: rotate(360deg);
+}
+.single-menu .menu-content h5 {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px dashed #222;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.single-menu .menu-content h5 span {
+  color: tomato;
+  float: right;
+  font-weight: 600;
+  font-style: italic;
+}
 
 
 /* Einde - Menu */

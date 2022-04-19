@@ -45,7 +45,7 @@
                         <div>
                             <h1 class="text-index">ILI BISTRO</h1>
                             <div class="border-index">
-                                <h5 class="text-index2"><a href="menu.php">Zie hier het menu</a></h5>
+                                <h3 class="text-index2"><a href="menu.php">Zie hier het menu</a></h3>
                             </div>
                         </div>
                     </div>

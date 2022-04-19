@@ -75,8 +75,7 @@ foreach( $stmt as $data )
 
         <form action="delete.php" method="post">
             <input class="crudforminput" type="text" placeholder="Product ID..." name="id" required>
-            <input class="deletebutton" placeholder="delete" value="Verwijderen" type="submit"
-                name="deletebutton"></input>
+            <input class="deletebutton" placeholder="delete" value="Verwijderen" type="submit" name="deletebutton"></input>
         </form>
     </div>
 </body>

@@ -1,11 +1,9 @@
 
-<link rel="stylesheet" href="../css/styles.css" />
+<link rel="stylesheet" href="css/styles.css" />
 <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a href="index.php" class="navbar-brand">
-            <h3 class="px-5">
-                <i class="fas fa-shopping-basket"></i> ILI BISTRO
-            </h3>
+            <h3 class="px-5"> ILI BISTRO</h3>
         </a>
         <button class="navbar-toggler"
             type="button"
@@ -17,6 +15,7 @@
         >
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="mr-auto"></div>
             <div class="navbar-nav">

@@ -25,23 +25,15 @@ class CreateDb
       $this->username = $username;
       $this->password = $password;
 
-      // create connection
         $this->con = mysqli_connect($servername, $username, $password);
-
-        // Check connection
         if (!$this->con){
             die("Connectie gefaald : " . mysqli_connect_error());
         }
 
-        // query
         $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
-
-        // execute query
         if(mysqli_query($this->con, $sql)){
 
             $this->con = mysqli_connect($servername, $username, $password, $dbname);
-
-            // sql to create new table
             $sql = " CREATE TABLE IF NOT EXISTS $tablename
                             (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                              product_name VARCHAR (25) NOT NULL,
@@ -58,7 +50,6 @@ class CreateDb
         }
     }
 
-    // get product from the database
     public function getData(){
         $sql = "SELECT * FROM $this->tablename";
 

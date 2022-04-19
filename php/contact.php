@@ -12,7 +12,7 @@
     <div class="header-container">
         <div id="header-balk" class="header-balk">
             <div class="logo">
-                <img src="fotosenvideos/Screenshot 2022-03-11 111514.png" alt="Logo Restaurant" width="100"
+                <img src="../fotosenvideos/Screenshot 2022-03-11 111514.png" alt="Logo Restaurant" width="100"
                     height="100" />
             </div>
             <div class="header-list-container">

@@ -33,46 +33,86 @@
     </div>
   </header>
 <body>
-  <div class="container-menu">
-    <div class="menu">
-      <div class="menu-groep">
-        <div class="menu-item">
-          <img class="menu-item-plaatje" src="../Shopping/upload/product1.png" alt="">
-          <div class="menu-item-tekst">
-            <h4 class="menu-item-head">
-              <span class="menu-item-naam">rgergerg</span>
-              <span class="menu-item-prijs">€12.90</span>
-            </h4>
-            <p class="menu-item-beschrijving">   </p>
-          </div>
+  <div class="main">
+        <div class="section-title">
+            <h2>ILI BISTRO - Menu</h2>
+            <p>Dit is ons menu, met de meest goed uitgekozen producten voor jouw!</p>
         </div>
-        <div class="menu-item">
-          <img class="menu-item-plaatje" src="../Shopping/upload/product2.png" alt="">
-          <div class="menu-item-tekst">
-            <h4 class="menu-item-head">
-              <span class="menu-item-naam">rgergerg</span>
-              <span class="menu-item-prijs">€12.90</span>
-            </h4>
-            <p class="menu-item-beschrijving">
-            </p>
-          </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>Hoofdgerechten</h4>
+                <div class="single-menu">
+                    <img src="../Shopping/upload/product1.png" alt="">
+                    <div class="menu-content">
+                        <h5>Steak Frites<span>€22</span></h5>
+                        <p>Heerlijke biefstuk met ambachtelijke frieten</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="../Shopping/upload/product3.png" alt="">
+                    <div class="menu-content">
+                        <h5>Escargot<span>€18</span></h5>
+                        <p>Smakelijke franse delicatesse</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://via.placeholder.com/150C" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>Bijgerechten</h4>
+                <div class="single-menu">
+                    <img src="" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-column">
+                <h4>Nagerechten</h4>
+                <div class="single-menu">
+                    <img src="../Shopping/upload/product2.png" alt="">
+                    <div class="menu-content">
+                        <h5>Crème brûlée<span>€12</span></h5>
+                        <p>Ambachtelijke franse vanilie pudding met gekarameliseerde suiker als hoed</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="" alt="">
+                    <div class="menu-content">
+                        <h5>food title <span>$50</span></h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="menu-groep">
-        <div class="menu-item">
-          <img class="menu-item-plaatje" src="../Shopping/upload/product3.png" alt="">
-          <div class="menu-item-tekst">
-            <h4 class="menu-item-head">
-              <span class="menu-item-naam">rgergerg</span>
-              <span class="menu-item-prijs">€12.90</span>
-            </h4>
-            <p class="menu-item-bescrhijving">
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </body>
 <footer class="container-footer">
         <div class="footer-links">
