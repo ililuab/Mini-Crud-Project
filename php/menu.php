@@ -56,34 +56,34 @@
                     </div>
                 </div>
                 <div class="single-menu">
-                    <img src="https://via.placeholder.com/150C" alt="">
+                    <img src="../Shopping/upload/product8.jpg" alt="">
                     <div class="menu-content">
-                        <h5>food title <span>$50</span></h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5>Zalm Filet<span>€40</span></h5>
+                        <p>Heerlijke zalm filet gebakken in boter.</p>
                     </div>
                 </div>
             </div>
             <div class="menu-column">
                 <h4>Bijgerechten</h4>
                 <div class="single-menu">
-                    <img src="" alt="">
+                    <img src="../Shopping/upload/product9.jpg" alt="">
                     <div class="menu-content">
-                        <h5>food title <span>$50</span></h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5>Frieten <span>€5</span></h5>
+                        <p>In dieren vet gebakken frieten.</p>
                     </div>
                 </div>
                 <div class="single-menu">
-                    <img src="" alt="">
+                    <img src="../Shopping/upload/product10.jpg" alt="">
                     <div class="menu-content">
-                        <h5>food title <span>$50</span></h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5>Kimchi<span>€3</span></h5>
+                        <p>Knapperige zoetzure plant.</p>
                     </div>
                 </div>
                 <div class="single-menu">
-                    <img src="" alt="">
+                    <img src="../Shopping/upload/product11.jpg" alt="">
                     <div class="menu-content">
-                        <h5>food title <span>$50</span></h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5>Kaas balletjes <span>€7</span></h5>
+                        <p>Heerlijke kaas ballen.</p>
                     </div>
                 </div>
             </div>
@@ -97,17 +97,17 @@
                     </div>
                 </div>
                 <div class="single-menu">
-                    <img src="" alt="">
+                    <img src="../Shopping/upload/product6.jpg" alt="">
                     <div class="menu-content">
-                        <h5>food title <span>$50</span></h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5>Cacao Pudding <span>€16</span> </h5>
+                        <p>Heerlijke zachte chocolade pudding.</p>
                     </div>
                 </div>
                 <div class="single-menu">
-                    <img src="" alt="">
+                    <img src="../Shopping/upload/product7.jpg" alt="">
                     <div class="menu-content">
-                        <h5>food title <span>$50</span></h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5>Brownies<span>€20</span></h5>    
+                        <p>Ambachtelijke fudge brownies.</p>
                     </div>
                 </div>
             </div>

@@ -694,9 +694,6 @@ img{
   margin-right: 15px;
   transition: .3s;
 }
-.single-menu:hover img{
-    transform: rotate(360deg);
-}
 .single-menu .menu-content h5 {
   text-transform: capitalize;
   font-size: 22px;
