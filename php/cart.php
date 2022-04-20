@@ -18,8 +18,6 @@ if (isset($_POST['remove'])){
       }
   }
 }
-
-
 ?>
 
 <!doctype html>
@@ -31,13 +29,8 @@ if (isset($_POST['remove'])){
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ILI BISTRO - Winkelwagen</title>
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
-
-    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
@@ -53,7 +46,6 @@ if (isset($_POST['remove'])){
                 <hr>
                 <h2>Mijn winkelwagen <style>h2 {color:white;}</style></h2>
                 <hr>
-
                 <?php
                 $total = 0;
                     if (isset($_SESSION['cart'])){

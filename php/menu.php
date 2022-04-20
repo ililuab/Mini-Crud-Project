@@ -36,7 +36,7 @@
   <div class="main">
         <div class="section-title">
             <h2>ILI BISTRO - Menu</h2>
-            <p>Dit is ons menu, met de meest goed uitgekozen producten voor jouw!</p>
+            <p>Dit is ons menu, met de meest goed uitgekozen gerechten voor jouw!</p>
         </div>
         <div class="menus">
             <div class="menu-column">

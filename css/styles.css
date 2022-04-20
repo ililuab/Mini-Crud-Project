@@ -234,17 +234,20 @@ h3 {
   color: white;
   text-decoration: none;
   color: black;
-}
-
-.border-index {
-  height: 90px;
-  border: black dotted 5px;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 25px;
 }
 
 h3:hover {
   text-align: center;
   transition: 0.5s;
   font-size: 37px;
+}
+
+.border-index {
+  height: 90px;
+  border: black dotted 5px;
 }
 
 .container-maps-contact {
