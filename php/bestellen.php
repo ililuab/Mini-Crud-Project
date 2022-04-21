@@ -46,14 +46,28 @@ if (isset($_POST['add'])){
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="body-bestellen">
     <?php require_once ("header.php"); ?>
+    <div class="container-zoekbalk">
+        <hr>
+        <form class="form-zoekbalk" action="#" method="get">
+            <input type="text" placeholder="Zoeken..." name="search" id="">
+            <input type="submit" value="Zoeken" name="searchKnop">
+        </form>
+    </div>
+
     <div class="container">
         <div class="row text-center py-5">
             <?php
-                $result = $database->getData();
+                if(isset($_GET['searchKnop'])) {
+                    $result = $database->getSpecificData($_GET['search']);
+                } else {
+                    $result = $database->getData();
+                }
                 while ($row = mysqli_fetch_assoc($result)){
                     component($row['product_name'], $row['product_price'], $row['product_image'], $row['id']);
+                    
                 }
             ?>
         </div>
@@ -68,4 +82,5 @@ if (isset($_POST['add'])){
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

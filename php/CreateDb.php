@@ -10,7 +10,6 @@ class CreateDb
         public $tablename;
         public $con;
 
-        // class constructor
     public function __construct(
         $dbname = "productdb",
         $tablename = "producttb",
@@ -52,6 +51,20 @@ class CreateDb
 
     public function getData(){
         $sql = "SELECT * FROM $this->tablename";
+        $result = mysqli_query($this->con, $sql);
+
+        if(mysqli_num_rows($result) > 0){
+            return $result;
+        } else {
+            header("Location: bestellen.php");
+            return null;
+        }
+        
+    }
+
+
+    public function getSpecificData($zoekvraag){
+        $sql = "SELECT * FROM $this->tablename WHERE product_name LIKE '%".$zoekvraag."%'";
 
         $result = mysqli_query($this->con, $sql);
 
