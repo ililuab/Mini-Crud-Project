@@ -898,3 +898,14 @@ img{
 }
 
 /* Einde - backend */
+
+/* Begin  - Media Querries */
+
+@media screen and (max-width: 600px) {
+  header {
+    float: none;
+    width: 50%;
+  }
+}
+
+/* Einde - Media Querries */
