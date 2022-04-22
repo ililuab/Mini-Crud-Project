@@ -60,7 +60,7 @@ foreach( $stmt as $data )
         <form action="create.php" method="post">
             <input class="crudforminput" type="text" placeholder="Product naam..." name="product_name" required>
             <input class="crudforminput" type="text" placeholder="Product prijs..." name="product_price" required>
-            <input class="crudforminput" type="text" placeholder="Product plaatje..." name="product_image" required>
+            <input class="crudforminput" type="file" placeholder="Product plaatje..." name="product_image" required>
             <input class="createbutton" placeholder="create" value="toevoegen" type="submit"
                 name="createbutton"></input>
         </form>

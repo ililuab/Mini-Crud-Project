@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0%;
   padding: 0;
   list-style: none;
   text-decoration: none;
@@ -9,7 +9,7 @@
 /* Begin - Body background en Header */
 
 body {
-  background-image: url(../fotosenvideos/blurred-busy-restaurant-background-free-photo.jfif);
+  background-image: url(../images/blurred-busy-restaurant-background-free-photo.jfif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -17,6 +17,7 @@ body {
 
 .header-list {
   display: flex;
+  justify-content: space-evenly;
   margin-right: 100px;
 }
 
@@ -24,8 +25,6 @@ li {
   padding: 10px 10px;
   border-radius: 10px;
   font-size: larger;
-  margin-left: 15px;
-  margin-right: 15px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   font-size: 16px;
@@ -49,7 +48,7 @@ li:hover {
 }
 
 .header-container .header-balk .logo {
-  margin-right: 700px;
+  margin-right: 50%;
   margin-left: 10px;
   border-radius: 10px;
 }
@@ -71,7 +70,7 @@ li:hover {
   background-color: #000;
   color: #fff;
   opacity: 0.5;
-  margin-top: 200px;
+  margin-top: 10%;
 }
 
 .container-footer .footer-links,
@@ -87,7 +86,7 @@ li:hover {
 
 .container-footer h3 {
   color: #ffffff;
-  margin: 0;
+  margin: 0%;
 }
 
 .container-footer .footer-links {
@@ -125,7 +124,7 @@ li:hover {
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
-  margin: 0;
+  margin: 0%;
 }
 
 .container-footer .footer-mid p a {
@@ -139,7 +138,7 @@ li:hover {
 }
 
 .container-footer .footer-icons {
-  margin-top: 25px;
+  margin-top: 20%;
 }
 
 .container-footer .footer-icons a {
@@ -152,28 +151,11 @@ li:hover {
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-  margin-bottom: 5px;
+  margin-bottom: 5%;
   border: solid;
   border-radius: 30px;
 }
 
-@media (max-width: 880px) {
-  .container-footer {
-      font: bold 14px sans-serif;
-  }
-
-  .container-footer .footer-links,
-  .container-footer .footer-mid,
-  .container-footer .footer-right {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
-  }
-  .container-footer .footer-mid i {
-      margin-left: 0;
-  }
-}
 
 /* Eind - Footer */
 
@@ -196,7 +178,7 @@ li:hover {
 
 .blok-index1 {
   background-color: transparent;
-  margin-top: 100px;
+  margin-top: 5%;
   width: 100%;
   height: 500px;
   border-top-right-radius: 10px;
@@ -215,7 +197,7 @@ li:hover {
 }
 
 h1 {
-  margin-top: 80px;
+  margin-top: 10%;
   font-family: "Courier New", monospace;
   font-size: 150px;
   color: white;
@@ -229,7 +211,7 @@ h1 {
 
 h3 {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 2%;
   font-family: "Courier New", monospace;
   color: white;
   text-decoration: none;
@@ -901,10 +883,21 @@ img{
 
 /* Begin  - Media Querries */
 
-@media screen and (max-width: 600px) {
-  header {
-    float: none;
-    width: 50%;
+@media (max-width: 880px) {
+  .container-footer {
+      font: bold 14px sans-serif;
+  }
+
+  .container-footer .footer-links,
+  .container-footer .footer-mid,
+  .container-footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+  .container-footer .footer-mid i {
+      margin-left: 0;
   }
 }
 
